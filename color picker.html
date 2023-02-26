@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker Tool</title>
+  <script>
+    document.addEventListener('DOMContentLoaded',() => {
+        document.querySelector('select').onchange = function() {
+            document.querySelector('h1').style.color = this.value
+        }
+        }
+    )
+  </script>
+</head>
+<body>
+<h1>Text will be changed into the selected color.</h1>
+<select id="hehe">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+</select>
+</body>
+</html>
